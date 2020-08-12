@@ -16,8 +16,10 @@ class Location extends Model
     public function venuetypes(){
         return $this->belongsTo('App\Venuetype');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
+    }
+    public function venues(){
+        return $this->hasOne('App\Venue');
     }
 }

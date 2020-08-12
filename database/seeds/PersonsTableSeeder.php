@@ -19,6 +19,6 @@ class PersonsTableSeeder extends Seeder
         \App\Person::create(['name'=>'Long Nguyen','email'=>'longnguyenv1995@gmail.com','gender'=>1]);
         
 
-        factory(\App\Person::class,20)->create();
+        //factory(\App\Person::class,20)->create();
     }
 }

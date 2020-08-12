@@ -16,16 +16,16 @@ class Purchasingtype extends Model
     public function clientinputs(){
         return $this->belongsTo('App\Clientinput');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
     }
-
     public function products(){
         return $this->hasMany('App\Product');
     }
-
     public function purchasingtypesets(){
         return $this->hasMany('App\Purchasingtypeset');
+    }
+    public function purchasings(){
+        return $this->hasMany('App\Purchasing');
     }
 }

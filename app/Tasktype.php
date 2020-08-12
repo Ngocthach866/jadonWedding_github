@@ -28,4 +28,8 @@ class Tasktype extends Model
     public function reourcegroups(){
         return $this->hasMany('App\Resourcegroup');
     }
+
+    public function tasks(){
+        return $this->hasMany('App\Task');
+    }
 }

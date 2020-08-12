@@ -17,48 +17,49 @@ class Program extends Model
     {
         return $this->belongsTo('App\Project');
     }
-
     public function milestones1(){
         return $this->belongsTo('App\Milestone','milestone1_id');
     }
-
     public function milestones2(){
         return $this->belongsTo('App\Milestone','milestone2_id');
     }
-
     public function milestones3(){
         return $this->belongsTo('App\Milestone','milestone3_id');
     }
-
     public function milestones4(){
         return $this->belongsTo('App\Milestone','milestone4_id');
     }
-
     public function milestones5(){
         return $this->belongsTo('App\Milestone','milestone5_id');
     }
-
     public function milestones6(){
         return $this->belongsTo('App\Milestone','milestone6_id');
     }
-
     public function milestones7(){
         return $this->belongsTo('App\Milestone','milestone7_id');
     }
-
     public function milestones8(){
         return $this->belongsTo('App\Milestone','milestone8_id');
     }
-
     public function milestones9(){
         return $this->belongsTo('App\Milestone','milestone9_id');
     }
-
     public function clientinputs(){
         return $this->belongsTo('App\Clientinput');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
+    }
+    public function tasks(){
+        return $this->hasOne('App\Task');
+    }
+    public function purchasings(){
+        return $this->hasOne('App\Purchasing');
+    }
+    public function venues(){
+        return $this->hasOne('App\Venue');
+    }
+    public function services(){
+        return $this->hasOne('App\Service');
     }
 }

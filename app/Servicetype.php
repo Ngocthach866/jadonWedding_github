@@ -16,20 +16,22 @@ class Servicetype extends Model
     public function tasktypesets(){
         return $this->belongsTo('App\Tasktypeset');
     }
-
     public function purchasingtypesets(){
         return $this->belongsTo('App\Purchasingtypeset');
     }
-
     public function venuetypes(){
         return $this->belongsTo('App\Venuetype');
     }
-
     public function clientinputs(){
         return $this->belongsTo('App\Clientinput');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
+    }
+    public function requirements(){
+        return $this->hasMany('App\Requirement');
+    }
+    public function services(){
+        return $this->hasMany('App\Service');
     }
 }

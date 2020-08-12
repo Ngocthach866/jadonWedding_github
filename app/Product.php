@@ -16,13 +16,13 @@ class Product extends Model
     public function vendors(){
         return $this->belongsTo('App\Vendor');
     }
-
     public function purchasingtypes(){
         return $this->belongsTo('App\Purchasingtype');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
     }
-
+    public function purchasings(){
+        return $this->hasMany('App\Purchasing');
+    }
 }

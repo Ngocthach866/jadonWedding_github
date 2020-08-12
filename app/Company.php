@@ -25,4 +25,7 @@ class Company extends Model
         return $this->morphMany('App\Resource', 'resourceable');
     }
 
+    public function clientinputs(){
+        return $this->morphMany('App\Clientinput', 'clientinputable');
+    }
 }

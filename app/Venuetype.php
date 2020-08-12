@@ -18,16 +18,16 @@ class Venuetype extends Model
     public function clientinputs(){
         return $this->belongsTo('App\Clientinput');
     }
-
     public function controls(){
         return $this->belongsTo('App\Control');
     }
-
     public function locations(){
         return $this->hasMany('App\Location');
     }
-
     public function servicetypes(){
         return $this->hasMany('App\Servicetype');
+    }
+    public function venues(){
+        return $this->hasMany('App\Venue');
     }
 }

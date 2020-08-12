@@ -24,4 +24,8 @@ class Resourcegroup extends Model
     public function resources(){
         return $this->hasMany('App\Resource');
     }
+
+    public function tasks(){
+        return $this->hasMany('App\Task');
+    }
 }

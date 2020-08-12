@@ -36,13 +36,12 @@ class Person extends Model
     }
     */
 
-    public function vendors()
-    {
+    public function vendors(){
         return $this->morphMany('App\Vendor', 'vendorable');
     }
 
-    public function resources()
-    {
+    public function resources(){
         return $this->morphMany('App\Resource', 'resourceable');
     }
+    
 }
