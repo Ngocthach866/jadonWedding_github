@@ -13,16 +13,16 @@ class Company extends Model
 
     protected $table = 'companys';
 
-    public function persons()
-    {
+    public function persons(){
         return $this->belongsTo('App\Person');
     }
 
-    public function vendors()
-    {
+    public function vendors(){
         return $this->morphMany('App\Vendor', 'vendorable');
     }
 
-    
+    public function resources(){
+        return $this->morphMany('App\Resource', 'resourceable');
+    }
 
 }

@@ -36,4 +36,24 @@ class Control extends Model
     public function products(){
         return $this->hasOne('App\Product');
     }
+
+    public function purchasingtypesets(){
+        return $this->hasOne('App\Purchasingtypeset');
+    }
+
+    public function tasktypes(){
+        return $this->hasOne('App\Tasktype');
+    }
+
+    public function tasktypesets(){
+        return $this->hasOne('App\Tasktypeset');
+    }
+
+    public function resourcegroups(){
+        return $this->hasOne('App\Resourcegroup');
+    }
+
+    public function resources(){
+        return $this->hasOne('App\Resource');
+    }
 }

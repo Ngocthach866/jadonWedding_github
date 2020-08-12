@@ -32,4 +32,16 @@ class Clientinput extends Model
     public function purchasingtypes(){
         return $this->hasOne('App\Purchasingtype');
     }
+
+    public function purchasingtypesets(){
+        return $this->hasOne('App\Purchasingtypeset');
+    }
+
+    public function tasktypes(){
+        return $this->hasOne('App\Tasktype');
+    }
+
+    public function tasktypesets(){
+        return $this->hasOne('App\Tasktypeset');
+    }
 }

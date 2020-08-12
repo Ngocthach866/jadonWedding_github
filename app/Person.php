@@ -41,4 +41,8 @@ class Person extends Model
         return $this->morphMany('App\Vendor', 'vendorable');
     }
 
+    public function resources()
+    {
+        return $this->morphMany('App\Resource', 'resourceable');
+    }
 }

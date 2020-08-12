@@ -21,8 +21,13 @@ class DatabaseSeeder extends Seeder
             ClientsTableSeeder::class,
             ProjectsTableSeeder::class,
             VendorsTableSeeder::class,
-            PurchasingtypeTableSeeder::class,
-            ProductsTableSeeder::class
+            PurchasingtypesTableSeeder::class,
+            ProductsTableSeeder::class,
+            PurchasingtypesetsTableSeeder::class,
+            TasktypesTableSeeder::class,
+            TasktypesetsTableSeeder::class,
+            ResourcegroupsTableSeeder::class,
+            ResourcesTableSeeder::class
             /*
             
             */

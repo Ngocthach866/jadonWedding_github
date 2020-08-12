@@ -5,13 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Purchasingtype extends Model
+class Tasktype extends Model
 {
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
 
-    protected $table = 'purchasingtypes';
+    protected $table = 'tasktypes';
 
     public function clientinputs(){
         return $this->belongsTo('App\Clientinput');
@@ -21,11 +21,11 @@ class Purchasingtype extends Model
         return $this->belongsTo('App\Control');
     }
 
-    public function products(){
-        return $this->hasMany('App\Product');
+    public function tasktypesets(){
+        return $this->hasMany('App\Tasktypeset');
     }
 
-    public function purchasingtypesets(){
-        return $this->hasMany('App\Purchasingtypeset');
+    public function reourcegroups(){
+        return $this->hasMany('App\Resourcegroup');
     }
 }

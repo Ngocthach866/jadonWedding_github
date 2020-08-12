@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PurchasingtypeTableSeeder extends Seeder
+class PurchasingtypesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
