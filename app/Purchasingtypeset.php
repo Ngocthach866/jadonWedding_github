@@ -36,4 +36,8 @@ class Purchasingtypeset extends Model
     public function products(){
         return $this->hasMany('App\Product');
     }
+
+    public function servicetypes(){
+        return $this->hasMany('App\Servicetype');
+    }
 }

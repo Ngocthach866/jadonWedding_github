@@ -27,7 +27,9 @@ class DatabaseSeeder extends Seeder
             TasktypesTableSeeder::class,
             TasktypesetsTableSeeder::class,
             ResourcegroupsTableSeeder::class,
-            ResourcesTableSeeder::class
+            ResourcesTableSeeder::class,
+            LocationsTableSeeder::class,
+            ServicetypesTableSeeder::class
             /*
             
             */

@@ -56,4 +56,16 @@ class Control extends Model
     public function resources(){
         return $this->hasOne('App\Resource');
     }
+
+    public function venuetypes(){
+        return $this->hasOne('App\Venuetype');
+    }
+
+    public function locations(){
+        return $this->hasMany('App\Location');
+    }
+
+    public function servicetypes(){
+        return $this->hasOne('App\Servicetype');
+    }
 }

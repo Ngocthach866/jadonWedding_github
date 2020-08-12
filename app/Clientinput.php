@@ -44,4 +44,12 @@ class Clientinput extends Model
     public function tasktypesets(){
         return $this->hasOne('App\Tasktypeset');
     }
+
+    public function venuetypes(){
+        return $this->hasOne('App\Venuetype');
+    }
+
+    public function servicetypes(){
+        return $this->hasOne('App\Servicetype');
+    }
 }
