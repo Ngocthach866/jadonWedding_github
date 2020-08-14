@@ -21,4 +21,6 @@ class Vendor extends Model
     public function products(){
         return $this->hasMany('App\Product');
     }
+
+    protected $fillable = ['name', 'vendorable_id', 'vendorable_type', 'description'];
 }

@@ -25,4 +25,6 @@ class Product extends Model
     public function purchasings(){
         return $this->hasMany('App\Purchasing');
     }
+
+    protected $fillable = ['vendor_id', 'purchasingtype_id', 'name', 'specification','price','expireddate','control_id'];
 }

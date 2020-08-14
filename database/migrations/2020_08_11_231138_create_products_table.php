@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('name',50);
             $table->text('specification')->nullable();
             $table->integer('price');
+            $table->string('picture')->nullable();
             $table->date('expireddate')->nullable();
             $table->foreignId('control_id')->constrained('controls');
             $table->softDeletes();

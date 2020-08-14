@@ -19,6 +19,7 @@ class CreateVendorsTable extends Migration
             $table->integer('vendorable_id');
             $table->string('vendorable_type',50);
             $table->text('description');
+            $table->string('picture')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
