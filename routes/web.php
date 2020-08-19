@@ -17,18 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Ven', function () {
-    return view('Ven');
-});
-Route::get('Pro', function () {
-    return view('Pro');
-});
-Route::get('Pcs', function () {
-    return view('Pcs');
-});
-Route::get('Pct', function () {
-    return view('Pct');
-});
-Route::get('Pts', function () {
-    return view('Pts');
-});
+
