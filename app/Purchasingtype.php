@@ -29,5 +29,5 @@ class Purchasingtype extends Model
         return $this->hasMany('App\Purchasing');
     }
 
-    protected $fillable = ['name', 'category', 'master', 'picture','specification','clientinput_id','clientinput_id','control_id'];
+    protected $fillable = ['id','name','category','master','picture','specification','clientinput_id','control_id','deleted_at','updated_at','created_at'];
 }

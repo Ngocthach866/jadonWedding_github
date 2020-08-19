@@ -26,5 +26,5 @@ class Product extends Model
         return $this->hasMany('App\Purchasing');
     }
 
-    protected $fillable = ['vendor_id', 'purchasingtype_id', 'name', 'specification','price','expireddate','control_id'];
+    protected $fillable = ['id','vendor_id','purchasingtype_id','name','specification','price','picture','expireddate','control_id','deleted_at','updated_at','created_at'];
 }

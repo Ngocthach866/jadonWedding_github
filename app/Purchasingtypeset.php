@@ -41,5 +41,5 @@ class Purchasingtypeset extends Model
         return $this->hasMany('App\Servicetype');
     }
 
-    protected $fillable = ['name', 'purchasingtype1_id', 'purchasingtype2_id', 'purchasingtype3_id','purchasingtype4_id','purchasingtype5_id','master','picture','clientinput_id','control_id'];
+    protected $fillable = ['id','name','purchasingtype1_id','purchasingtype2_id','purchasingtype3_id','purchasingtype4_id','purchasingtype5_id','master','picture','clientinput_id','control_id','deleted_at','updated_at','created_at'];
 }

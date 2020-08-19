@@ -40,5 +40,5 @@ class Purchasing extends Model
     public function services(){
         return $this->hasOne('App\Service');
     }
-    protected $fillable = ['project_id', 'client_id', 'requirement_id', 'purchasingtype_id','product_id','picture','clientinput_id','control_id','program_id'];
+    protected $fillable = ['id','project_id','client_id','requirement_id','purchasingtype_id','product_id','picture','clientinput_id','control_id','program_id','deleted_at','updated_at','created_at'];
 }
