@@ -23,19 +23,10 @@ class PurchasingtypesetController extends Controller
     public function purchasingtypeset()
     {
         $purtypeset = Purchasingtypeset::all();
-        $purchasing = Purchasing::all();
-        $program = Program::all('id');
         $clientinput = Clientinput::all('id');
-        $requirement = Requirement::all('id');
-        $Client = Client::all('id');
-        $project = Project::all('id');
-        $vendor = Vendor::all();
-        $person = Person::all('id');
-        $company = Company::all('id');
-        $product = Product::all();
-        $purtype = Purchasingtype::all();
+        $purtype = Purchasingtype::all('id');
         $control = Control::all('id');
-        return view('Pts', compact('purtypeset','Client','purchasing', 'program', 'clientinput', 'requirement', 'project', 'vendor', 'person', 'company', 'product', 'purtype', 'control'));
+        return view('Pts', compact('purtypeset','clientinput', 'purtype', 'control'));
     }
 
 

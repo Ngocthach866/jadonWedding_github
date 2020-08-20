@@ -22,20 +22,10 @@ class VendorController extends Controller
 //tbVendor
     public function vendor()
     {
-        $purtypeset = Purchasingtypeset::all();
-        $purchasing = Purchasing::all();
-        $program = Program::all('id');
-        $clientinput = Clientinput::all('id');
-        $requirement = Requirement::all('id');
-        $Client = Client::all('id');
-        $project = Project::all('id');
         $vendor = Vendor::all();
         $person = Person::all('id');
         $company = Company::all('id');
-        $product = Product::all();
-        $purtype = Purchasingtype::all();
-        $control = Control::all('id');
-        return view('Ven', compact('purtypeset','Client','purchasing', 'program', 'clientinput', 'requirement', 'project', 'vendor', 'person', 'company', 'product', 'purtype', 'control'));
+        return view('Ven', compact('vendor', 'person', 'company'));
     }
 
 

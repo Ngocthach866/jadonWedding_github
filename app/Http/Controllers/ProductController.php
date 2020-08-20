@@ -23,20 +23,11 @@ class ProductController extends Controller
 
 public function product()
     {
-        $purtypeset = Purchasingtypeset::all();
-        $purchasing = Purchasing::all();
-        $program = Program::all('id');
-        $clientinput = Clientinput::all('id');
-        $requirement = Requirement::all('id');
-        $Client = Client::all('id');
-        $project = Project::all('id');
-        $vendor = Vendor::all();
-        $person = Person::all('id');
-        $company = Company::all('id');
+        $vendor = Vendor::all('id');
         $product = Product::all();
-        $purtype = Purchasingtype::all();
+        $purtype = Purchasingtype::all('id');
         $control = Control::all('id');
-        return view('Pro', compact('purtypeset','Client','purchasing', 'program', 'clientinput', 'requirement', 'project', 'vendor', 'person', 'company', 'product', 'purtype', 'control'));
+        return view('Pro', compact('vendor', 'product', 'purtype', 'control'));
     }
 
 public function productcreate(Request $request)
