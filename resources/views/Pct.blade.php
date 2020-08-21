@@ -156,7 +156,7 @@
                     <div class="panel-heading btn-info " id="N5">Table PurchasingType</div>
                     <div class="panel-body">
 
-                        <div class="card">
+                        <div class="card container-fluid">
                             <div class="card-header">
                                 <h3 class="card-title">PurchasingType</h3>
                             </div>

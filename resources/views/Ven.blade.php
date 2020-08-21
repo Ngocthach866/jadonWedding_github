@@ -140,7 +140,7 @@
                     <div class="panel-heading btn-info " id="N5">Table Vendor</div>
                     <div class="panel-body">
                         <!--table Vendor-->
-                        <div class="card">
+                        <div class="card container-fluid">
                             <div class="card-header">
                                 <h3 class="card-title">Vendor</h3>
                             </div>

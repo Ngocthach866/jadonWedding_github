@@ -162,7 +162,7 @@
                     <div class="panel-heading btn-info ">Table Product</div>
                     <div class="panel-body">
                         <!--table Product-->
-                        <div class="card">
+                        <div class="card container-fluid">
                             <div class="card-header">
                                 <h3 class="card-title">Product</h3>
                             </div>

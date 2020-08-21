@@ -208,7 +208,7 @@
                 <div class="panel-heading btn-info ">Table Purchasing</div>
                 <div class="panel-body">
                     <!--table Purchasing-->
-                    <div class="card">
+                    <div class="card container-fluid">
                         <div class="card-header">
                             <h3 class="card-title">Purchasing</h3>
                         </div>
