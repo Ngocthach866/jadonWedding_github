@@ -53,8 +53,8 @@
                 </div>
                 <!--  form  -->
                 <div class="col-sm-7 panel-info" style="float:left;">
-                    <div class="panel-heading btn btn-info ">Create New Product</div>
-                    <div class="panel-body">
+                    <div id="show" class="panel-heading btn btn-info ">Create New Product</div>
+                    <div id="hide" class="panel-body" style="display:none">
                         <!-- form start -->
                         <div class="container-lg">
                             <form role="form" action="{{ url('product/postCreate') }}" method="post" enctype="multipart/form-data">
@@ -70,7 +70,7 @@
 
                                     <div class="form-group">
 
-                                        <label for="vendor_id">Vendor_Id</label>
+                                        <label for="vendor_id">Vendor_id</label>
                                         <select required name="vendor_id" id="vendor_id" style="color:grey;">
                                             <optgroup label="Vendor_id" style="color:black;">
                                                 @if ($vendor != null)
@@ -85,7 +85,7 @@
 
                                     <div class="form-group">
 
-                                        <label for="purchasingtype_id">Vendorable_type</label>
+                                        <label for="purchasingtype_id">Purchasingtype_id</label>
                                         <select required name="purchasingtype_id" id="purchasingtype_id" style="color:grey;">
 
                                             @if ($purtype != null)
@@ -159,7 +159,7 @@
                 </div>
                 <!--  table  -->
                 <div class="col-xl-12 col-sm-12 panel-info" style="float:left;">
-                    <div class="panel-heading btn-info ">Table Product</div>
+                    <div class="panel-heading btn-info">Table Product</div>
                     <div class="panel-body">
                         <!--table Product-->
                         <div class="card container-fluid">
@@ -228,7 +228,13 @@
                         </div>
                     </div>
                 </div>
-
+                <script>
+                    $(document).ready(function() {
+                        $("#show").click(function() {
+                            $("#hide").toggle();
+                        });
+                    });
+                </script>
             </div>
         </div>
     </div>

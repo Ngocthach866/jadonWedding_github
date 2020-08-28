@@ -53,8 +53,8 @@
                 </div>
                 <!--  form  -->
                 <div class="col-sm-7 panel-info" style="float:left;">
-                    <div class="panel-heading btn btn-info ">Create New PurchasingType</div>
-                    <div class="panel-body">
+                    <div id="show" class="panel-heading btn btn-info ">Create New PurchasingType</div>
+                    <div id="hide" class="panel-body" style="display:none">
                         <!-- form start -->
                         <div class="container-lg">
                             <form role="form" action="{{ url('purchasingtype/postCreate') }}" method="post" enctype="multipart/form-data">
@@ -153,7 +153,7 @@
                 </div>
                 <!-- table  -->
                 <div class="col-xl-12 col-sm-12 panel-info" style="float:left;">
-                    <div class="panel-heading btn-info " id="N5">Table PurchasingType</div>
+                    <div class="panel-heading btn-info ">Table PurchasingType</div>
                     <div class="panel-body">
 
                         <div class="card container-fluid">
@@ -218,6 +218,13 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    $(document).ready(function() {
+                        $("#show").click(function() {
+                            $("#hide").toggle();
+                        });
+                    });
+                </script>
             </div>
         </div>
     </div>
