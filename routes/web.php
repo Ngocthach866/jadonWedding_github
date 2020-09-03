@@ -47,3 +47,7 @@ Route::post('purchasingtypeset/postCreate','PurchasingtypesetController@purchasi
 Route::get('purchasingtypeset/update/{id}','PurchasingtypesetController@purchasingtypesetupdate');
 Route::post('purchasingtypeset/postUpdate/{id}','PurchasingtypesetController@purchasingtypesetpostUpdate');
 Route::get('purchasingtypeset/delete/{id}', 'PurchasingtypesetController@purchasingtypesetdelete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
