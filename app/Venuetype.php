@@ -15,19 +15,31 @@ class Venuetype extends Model
 
     //protected $fillable = ['name'];
 
-    public function clientinputs(){
+    public function clientinputs()
+    {
         return $this->belongsTo('App\Clientinput');
     }
-    public function controls(){
+
+    public function controls()
+    {
         return $this->belongsTo('App\Control');
     }
-    public function locations(){
+
+    public function locations()
+    {
         return $this->hasMany('App\Location');
     }
-    public function servicetypes(){
+
+    public function servicetypes()
+    {
         return $this->hasMany('App\Servicetype');
     }
-    public function venues(){
+
+    public function venues()
+    {
         return $this->hasMany('App\Venue');
     }
+
+    protected $fillable = ['id', 'name', 'category', 'master', 'picture', 'specification', 'clientinput_id', 'control_id', 'updated_
+    at', 'created_at'];
 }

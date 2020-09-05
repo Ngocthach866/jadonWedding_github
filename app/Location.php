@@ -13,13 +13,21 @@ class Location extends Model
 
     protected $table = 'locations';
 
-    public function venuetypes(){
+    public function venuetypes()
+    {
         return $this->belongsTo('App\Venuetype');
     }
-    public function controls(){
+
+    public function controls()
+    {
         return $this->belongsTo('App\Control');
     }
-    public function venues(){
+
+    public function venues()
+    {
         return $this->hasOne('App\Venue');
     }
+
+    protected $fillable = ['id', 'name', 'address', 'from', 'to', 'venuetype_id', 'price', 'expireddate', 'specification', 'picture', 'control_id', 'updated_
+at', 'created_at'];
 }
